@@ -98,11 +98,12 @@
 
 					<p>
 						I am an MS in Electrical Engineering student at <a target="_blank" href="https://www.stanford.edu">Stanford University</a> specializing in AI/Machine Learning.
-						I worked at Microsoft for the last 2 years as a Data and Applied Scientist in the Cybersecurity research team. 
-						Previously, I graduated with a Bachelors degree in Electrical Engineering and a minor in Deep Learning from the <a target="_blank" href="https://www.iitm.ac.in/">Indian Institute of Technology (IIT) Madras</a>. 
-						During this time, I pursued research at the intersection of NLP and deep learning that led to publications in top conferences such as <a target="_blank" href="https://www.2022.aclweb.org">ACL</a>, <a target="_blank" href="https://coling2020.org">COLING</a> and <a target="_blank" href="https://www.siam.org/conferences/cm/conference/alenex22">ALENEX</a>.
+						Previously, I worked at Microsoft for two years as a Data and Applied Scientist in the Cybersecurity research team. 
+						I completed my Bachelor's degree in Electrical Engineering with a minor in Deep Learning from the <a target="_blank" href="https://www.iitm.ac.in/">Indian Institute of Technology (IIT) Madras</a>. 
+						During this time, I pursued research at the intersection of NLP and deep learning that led to publications at ACL, COLING, and ALENEX.
+						My current research interests include interpretable machine learning, compression of LLMs, and LLM agents.
 					</p>
-					<i class="fa fa-search"></i>&emsp; Interests: Interpretable Machine Learning, NLP, Deep Learning/LLMs</a><br>
+					<i class="fa fa-search"></i>&emsp; Interests: Interpretable/Efficient ML, NLP, LLM Agents</a><br>
 					<i class="fa fa-download"></i>&emsp; Download my résumé <a target="_blank" href="resources/resume.pdf">here</a>
 					<!-- <h2>Interests</h2>
 					&emsp; <i class="fa-light fa-dash"></i> Interpretable Machine Learning<br>
@@ -154,9 +155,49 @@
 				<div class="col-md-8 " style="margin-bottom: -1em; "><h1>Publications</h1></div>
 			</div>
 
-			<h2 class="year" style="color: rgb(175, 175, 175)">2022</h2>
+			<h2 class="year" style="color: rgb(175, 175, 175)">2024</h2>
 
 			<!-- CanvasAsContext -->
+			<div class="row" style="margin: 2.5em 0 ">
+				<div class="col-md-4">
+					<img class="pub-img " style="margin-right: auto; margin-left: auto; width: 85%" src="img/Publications/adaptwin.png"></img>
+				</div>
+				<div class="col-md-8">
+					<li itemscope itemtype="http://schema.org/CreativeWork ">
+						<span itemprop="name">AdaPTwin: Low-Cost Adaptive Compression of Product Twins in Transformers</span>
+						<div class="pub-list-item " itemscope itemtype="http://schema.org/CreativeWork ">
+							<div class="pub-authors " itemprop="author ">
+								<b style="color: #0095eb">Emil Biju</b>,
+								<text style="color: black">Anirudh Sriram</text>,
+								<text style="color: black">Mert Pilanci</text>
+							</div>
+							<div class="pub-publication ">ArXiv Preprint</div>
+							<p>
+								<a class="btn btn-primary btn-outline btn-xs" onclick="var div = document.getElementById('CanvasAsContext_abstract_publication'); if (div.style.display !== 'none') {div.style.display = 'none'; div.style.wordWrap = 'normal';} else {div.style.display = 'block'; div.style.wordWrap = 'normal';}">Abstract</a>
+								<a class="btn btn-primary btn-outline btn-xs " target="_blank" href="https://arxiv.org/pdf/2406.08904v1">PDF</a>
+								<a class="btn btn-primary btn-outline btn-xs" onclick="var div = document.getElementById('CanvasAsContext_bib_publication'); if (div.style.display !== 'none') {div.style.display = 'none';} else {div.style.display = 'block';}">BibTeX</a>
+<pre id="CanvasAsContext_abstract_publication", style="display:none">
+While large transformer-based models have exhibited remarkable performance in speaker-independent speech recognition, their large size and computational requirements make them expensive or impractical to use in resource-constrained settings. In this work, we propose a low-rank adaptive compression technique called AdaPTwin that jointly compresses product-dependent pairs of weight matrices in the transformer attention layer. Our approach can prioritize the compressed model's performance on a specific speaker while maintaining generalizability to new speakers and acoustic conditions. Notably, our technique requires only 8 hours of speech data for fine-tuning, which can be accomplished in under 20 minutes, making it highly cost-effective compared to other compression methods. We demonstrate the efficacy of our approach by compressing the Whisper and Distil-Whisper models by up to 45% while incurring less than a 2% increase in word error rate. 
+</pre>
+<pre id="CanvasAsContext_bib_publication", style="display:none">
+@misc{biju2024adaptwinlowcostadaptivecompression,
+	title={AdaPTwin: Low-Cost Adaptive Compression of Product Twins in Transformers}, 
+	author={Emil Biju and Anirudh Sriram and Mert Pilanci},
+	year={2024},
+	eprint={2406.08904},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2406.08904}, 
+}
+</pre>
+							</p>
+						</div>
+					</li>
+				</div>
+			</div>
+
+			<h2 class="year" style="color: rgb(175, 175, 175)">2022</h2>
+
 			<div class="row" style="margin: 2.5em 0 ">
 				<div class="col-md-4">
 					<img class="pub-img " style="margin-right: auto; margin-left: auto; width: 85%" src="img/Publications/acl-findings-img2.png"></img>
@@ -428,10 +469,10 @@ Gesture typing is a method of typing words on a touch-based keyboard by creating
 						<span itemprop="name"><text><b>Stanford University</b></text></span>
 						<div class="pub-list-item " itemscope itemtype="http://schema.org/CreativeWork ">
 							<div class="pub-authors2 " itemprop="author ">
-								<text style="color: #0095eb;">M.S. in Electrical Engineering, specializing in AI<br>
+								<text style="color: #0095eb;">M.S. in Electrical Engineering. Focus area: AI/ML<br>
 								</text>
 								<ul  style="padding: 1.2em;color: black">
-								<li><text style="color: black">Coursework and research in theoretical machine learning and applications to deep learning/LLMs.</text></li>
+								<li><text style="color: black">Coursework and research in machine learning with applications in NLP/LLMs.</text></li>
 							</ul></div>
 						</div>
 					</li>
@@ -479,6 +520,14 @@ Gesture typing is a method of typing words on a touch-based keyboard by creating
 					<div class="col-md-8">
 						<li itemscope itemtype="http://schema.org/CreativeWork ">
 							<span itemprop="name"><text><b>Microsoft R&D</b></text></span>
+							<div class="pub-list-item " itemscope itemtype="http://schema.org/CreativeWork ">
+								<div class="pub-authors2 " itemprop="author ">
+									<text style="color: #0095eb;">Data Scientist Intern</text><br>
+									<text style="color: green;">June - September, 2024</text><br>
+									<br>
+									<text style="color: black;">Developed a cost-efficient LLM pipeline to analyze responses from Microsoft Copilot and derive insights about common failure patterns.</text>
+								</div>
+							</div>
 							<div class="pub-list-item " itemscope itemtype="http://schema.org/CreativeWork ">
 								<div class="pub-authors2 " itemprop="author ">
 									<text style="color: #0095eb;">Data and Applied Scientist</text><br>
